@@ -1,0 +1,1 @@
+document.getElementById("search").innerText=5

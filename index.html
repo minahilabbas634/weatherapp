@@ -32,14 +32,26 @@
     gap: 12px;
     padding-bottom: 20px;">
     <input type="search" placeholder="Enter your city name.."
-     style="padding: 5px 7px 7px 10px;border-radius:5px;border-color: aliceblue;">
+     style="padding: 5px 7px 7px 10px;border-radius:5px;border-color: aliceblue;" id="search" list="city-list">
+     <datalist id="city-list" >
+        <option value="karachi"></option>
+        <option value="islamabad"></option>
+        <option value="faisalabad"></option>
+        <option value="tandlianwala"></option>
+        <option value="quetta"></option>
+        <option value="okara"></option>
+        <option value="pesshawar"></option>
+        <option value="San Francisco"></option>
+        <option value="london"></option>
+
+     </datalist>
     <button type="button"
      style="cursor: pointer;
      padding: 5px 9px 7px 9px;
      border-radius: 5px;
      border-color: blue;
      background-color: blue;
-     color: aliceblue;">Search</button>
+     color: aliceblue;" id="search-btn" onclick="search()">Search</button>
  </div>
 
    </div>
@@ -49,7 +61,7 @@
     <p style="padding-left: 18px;color: aliceblue;font-size: 20px;">25 C</p>
     <p style="padding-left: 18px;color: aliceblue;font-size: 20px;">Sunny <br>Humidity:45%
     <br>Wind:10km/h </p>
-
+<script src="/app.js"></script>
    </div>
 </body>
 </html>
